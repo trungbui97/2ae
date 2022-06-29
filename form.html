@@ -9,10 +9,35 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <div class="container">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <h1>Đăng Kí</h1>
-          </button>
+    <div class="container__fluid">
+        <div class="btn__">
+          <button style="font-size: 16px !important;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           Đăng Kí
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal__1">
+              Sign Up
+            </button>
+        </div>
+           <!-- Modal -->
+           <div class="modal fade" id="exampleModal__1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title" id="exampleModalLabel">Register</h1>
+                 
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Login</button>
+                  <p>Not a member? <a href="">Signup</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
           
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
